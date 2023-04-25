@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Creating Fixed Header and Footer with CSS</title>
+<style>
+   
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; 
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+        line-height: 40px;
+    }
+    
+.sidebar {
+height: 100%;
+width: 100px;
+position: fixed;
+top: 0;
+left: 0;
+padding-top: 40px;
+background-color: lightblue;
+}
+
+.sidebar div {
+padding: 8px;
+font-size: 24px;
+display: block;
+}
+
+
+.parent {
+  width: 500px;
+
+  margin: auto;
+  text-align: center;
+}
+
+.child {
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+ 
+}
+
+.one {
+  background-color: powderblue;
+  position: absolute;
+  right: 0%;
+}
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 20%;
+    margin: 10px;
+    margin-bottom: 20px;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+
+
+
+        <div class="container">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+        <div class="sidebar">
+            <div>Menu  1</div>
+            <div>Menu  2</div>
+            <div>Menu  3</div>
+            </div>
+    </div>
+    
+    <div class="parent">
+        <div class="child one">One</div>
+      
+      </div>
+   
+    <div class="container">
+        <div class="float-container">
+
+            <div class="float-child">
+              <div class="green">Float Column 1</div>
+            </div>
+            
+            <div class="float-child">
+              <div class="blue">Float Column 2</div>
+            </div>
+            
+          </div> 
+        	<p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+            <p>Lorem ipsum dolor sit amet,t suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+       
+    
+      
+      
+    </div>   
+    
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2016 Your Company</div>        
+    </div>
+</body>
+</html>
